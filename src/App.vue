@@ -124,6 +124,10 @@ body{
   margin-top: 15px;
   border-radius: 10px;
 }
+.flexbox .board .card:hover {
+  background-color: #ccc;
+  transition: 0.7s;
+}
 
 .input-container {
   display: flex;
@@ -148,6 +152,7 @@ body{
 }
 
 .input-container button:hover {
-  background-color: rgb(240, 198, 147); /* Darker blue on hover for better interaction feedback */
+  background-color: rgb(240, 198, 147); 
+  transition: 0.7s;
 }
 </style>
