@@ -46,11 +46,11 @@ export default {
       ],
       cards: {
         'board-1': [
-          {id: `card-${Date.now()}`, title: 'Css', description: 'Do css'},  
-          {id: `card-${Date.now()}`, title: 'Vue', description: 'Do vue'},
-          {id: `card-${Date.now()}`, title: 'Java', description: 'Do java'},
-          {id: `card-${Date.now()}`, title: 'Typescript', description: 'Do typescript'},
-          {id: `card-${Date.now()}`, title: 'Design', description: 'Do design'}
+          {id: `card-1}`, title: 'Css', description: 'Do css'},  
+          {id: `card-2}`, title: 'Vue', description: 'Do vue'},
+          {id: `card-3}`, title: 'Java', description: 'Do java'},
+          {id: `card-4}`, title: 'Typescript', description: 'Do typescript'},
+          {id: `card-5}`, title: 'Design', description: 'Do design'}
         ],
         'board-2': [],
         'board-3': [],
