@@ -46,17 +46,20 @@ export default {
       ],
       cards: {
         'board-1': [
-          {id: `card-1}`, title: 'Css', description: 'Do css'},  
-          {id: `card-2}`, title: 'Vue', description: 'Do vue'},
-          {id: `card-3}`, title: 'Java', description: 'Do java'},
-          {id: `card-4}`, title: 'Typescript', description: 'Do typescript'},
-          {id: `card-5}`, title: 'Design', description: 'Do design'}
+          {id: 1, title: 'Css', description: 'Do css'},  
+          {id: 2, title: 'Vue', description: 'Do vue'},
+          {id: 3, title: 'Java', description: 'Do java'},
+          {id: 4, title: 'Typescript', description: 'Do typescript'},
+          {id: 5, title: 'Design', description: 'Do design'}
         ],
         'board-2': [],
         'board-3': [],
         'board-4': [],
         'board-5': []
-      }
+      },
+      id: 6,
+      newCardTitle: '',
+      newCardDescription: '',
     }
   },
   components: {
@@ -70,7 +73,7 @@ export default {
         alert('Both title and description are required')
         return;
       }
-      const newCardId = `card-${Date.now()}`;
+      const newCardId = this.id;
       const newCard = {
         id: newCardId,
         title: title,
@@ -79,6 +82,7 @@ export default {
       this.cards['board-1'].push(newCard);
       this.newCardTitle = '';
       this.newCardDescription = '';
+      this.id += 1;
     }
   }
 }
